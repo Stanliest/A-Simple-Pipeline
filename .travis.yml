@@ -4,9 +4,6 @@ node_js:
 cache:
   directories:
     - node_modules
-before_install:
-  - pip install --user awscli
-  - export PATH=$PATH:$HOME/.local/bin
 script:
   - yarn build
 deploy:
@@ -14,6 +11,7 @@ deploy:
   access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   bucket: a-simple-pipeline
+  local_dir: build
   skip_cleanup: true
   acl: public_read
   on:
