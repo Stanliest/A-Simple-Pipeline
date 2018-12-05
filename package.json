@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Stanliest/A-Simple-Pipeline/issues"
   },
-  "homepage": "https://github.com/Stanliest/A-Simple-Pipeline#readme"
+  "homepage": "https://github.com/Stanliest/A-Simple-Pipeline#readme",
+  "dependencies": {
+    "yarn": "^1.12.3"
+  }
 }
