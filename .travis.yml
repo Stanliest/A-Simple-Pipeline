@@ -1,14 +1,17 @@
-language: python
-python:
-  - "3.5"
+language: node_js
+node_js:
+  - "stable"
 cache:
   directories:
     - node_modules
 install:
-    - pip install awscli
+  - pip install awscli
+script:
+  - yarn 
 deploy:
   provider: s3
   access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   bucket: a-simple-pipeline
   skip_cleanup: true
+  acl: public_read

@@ -4,7 +4,8 @@
   "description": "learning how to set up a pipeline with travis and more CI/CD tools",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": ". ./build.sh"
   },
   "repository": {
     "type": "git",
