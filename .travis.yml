@@ -1,8 +1,11 @@
 language: node_js
+sudo: required
 node_js:
   - "stable"
 cache:
   directories:
     - node_modules
+before_install:
+  - sudo pip install awscli --upgrade --user
 script:
   - yarn sync
