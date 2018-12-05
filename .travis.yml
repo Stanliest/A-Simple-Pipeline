@@ -4,8 +4,9 @@ node_js:
 cache:
   directories:
     - node_modules
-install:
-  - pip install awscli
+before_install:
+  - pip install --user awscli
+  - export PATH=$PATH:$HOME/.local/bin
 script:
   - yarn build
 deploy:
