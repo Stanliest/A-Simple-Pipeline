@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Stanliest/A-Simple-Pipeline#readme",
   "dependencies": {
+    "react-scripts": "^2.1.1",
     "yarn": "^1.12.3"
   }
 }
