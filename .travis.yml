@@ -16,3 +16,5 @@ deploy:
   bucket: a-simple-pipeline
   skip_cleanup: true
   acl: public_read
+  on:
+    all_branches: true
