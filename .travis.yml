@@ -7,7 +7,7 @@ cache:
 script:
   - yarn build
 before_deploy:
-  - pwd
+  - echo "Current Travis build Dir is:" $PWD
 deploy:
   provider: s3
   access_key_id: $AWS_ACCESS_KEY_ID
