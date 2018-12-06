@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <PageHeader>
-        A Simple Pipeline <small>Under development</small>
+        A Simple Pipeline
       </PageHeader>
     );
   }

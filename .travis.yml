@@ -13,6 +13,6 @@ deploy:
   bucket: a-simple-pipeline
   local_dir: build
   skip_cleanup: true
-  acl: public_read
+  region: ca-central-1
   on:
     all_branches: true
