@@ -13,7 +13,7 @@ deploy:
   access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   bucket: a-simple-pipeline
-  local_dir: build
+  local_dir: /home/travis/build/Stanliest/A-Simple-Pipeline/frontend/build
   skip_cleanup: true
   region: ca-central-1
   on:
