@@ -5,4 +5,16 @@ cache:
   directories:
     - node_modules
 script:
-  - yarn sync
+  - yarn build
+before_deploy:
+  - echo "Current Travis build Dir is:" $PWD
+deploy:
+  provider: s3
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  bucket: a-simple-pipeline
+  local_dir: /home/travis/build/Stanliest/A-Simple-Pipeline/frontend/build
+  skip_cleanup: true
+  region: ca-central-1
+  on:
+    all_branches: true

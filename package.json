@@ -1,0 +1,24 @@
+{
+  "name": "a-simple-pipeline",
+  "version": "1.0.0",
+  "description": "learning how to set up a pipeline with travis and more CI/CD tools",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": ". ./build.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stanliest/A-Simple-Pipeline.git"
+  },
+  "author": "Stanley Liu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stanliest/A-Simple-Pipeline/issues"
+  },
+  "homepage": "https://github.com/Stanliest/A-Simple-Pipeline#readme",
+  "dependencies": {
+    "react-scripts": "^2.1.1",
+    "yarn": "^1.12.3"
+  }
+}
