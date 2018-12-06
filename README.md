@@ -1,6 +1,5 @@
 # A-Simple-Pipeline
-
-![AppVeyor](https://img.shields.io/appveyor/ci/:user/:repo.svg)
+Travis build status: ![Travis (.org)](https://img.shields.io/travis/:user/:repo.svg?style=popout-square)
 
 Learning how to set up a simple deployment pipeline with AWS S3 and Travis
 
